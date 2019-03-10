@@ -25,7 +25,7 @@ void ResCor(Double_t mincent, Double_t maxcent, Double_t delcent, Double_t minvt
     string datname = "RescorTables_"+savetag+"/"+EPNames[i]+".dat";
     fout[i] = fopen(datname.data(),"w");
   }
-  string epname = "/rfs/sanders/EP_"+savetag+".root";
+  string epname = "/panfs/EP_"+savetag+".root";
   tf = new TFile(epname.data());
   tr = (TTree *) tf->Get("EPtree");
   int nbins = (int) ( (maxcent-mincent)/delcent+0.1 );

@@ -143,7 +143,7 @@ void EPCalib(unsigned int minRun=0, unsigned int maxRun=500000, string tag=""){
   maxRun_ = maxRun;
   cout<<"minRun: "<<minRun_<<endl;
   cout<<"maxRun: "<<maxRun_<<endl;
-  savename = "/rfs/sanders/tmp_"+tag;
+  savename = "/panfs/tmp_"+tag;
   save = fopen(savename.data(),"wb");
   cout<<savename<<" : "<<save<<endl;
   int Hbins = 0;
@@ -164,7 +164,7 @@ void EPCalib(unsigned int minRun=0, unsigned int maxRun=500000, string tag=""){
   }
   if(maxfiles>0) lcnt = maxfiles;
   fclose(list);
-  string epname = "/rfs/sanders/EP_"+tag+".root";
+  string epname = "/panfs/EP_"+tag+".root";
   cout<<epname<<endl;
   TFile * tfout = new TFile(epname.data(),"recreate");
   TDirectory * outdir = tfout->mkdir("hiEvtPlaneFlatCalib");

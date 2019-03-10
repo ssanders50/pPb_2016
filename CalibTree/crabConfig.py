@@ -44,7 +44,7 @@ if __name__ == '__main__':
     ## From now on that's what users should modify: this is the a-la-CRAB2 configuration part. ##
     #############################################################################################
 
-#submit(config)
+submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_MB1'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_MB1'
@@ -53,7 +53,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=0','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAMinimumBias1/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-#submit(config)
+submit(config)
 
 
 config.General.requestName = 'pPb2016_pPb_MB2'
@@ -63,7 +63,7 @@ config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=0','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAMinimumBias2/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285479-285832'
-#submit(config)
+submit(config)
 
 
 config.General.requestName = 'pPb2016_Pbp_MB2'
@@ -73,7 +73,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=0','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAMinimumBias2/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-#submit(config)
+submit(config)
 
 config.General.requestName = 'pPb2016_pPb_MB3'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_pPb_MB3'
@@ -139,7 +139,7 @@ config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=120','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity2/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285479-285832'
-submit(config)
+#submit(config)
 
 
 config.General.requestName = 'pPb2016_Pbp_HM120_3'
@@ -149,7 +149,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=120','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity2/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 
 config.General.requestName = 'pPb2016_pPb_HM120_4'
@@ -159,7 +159,7 @@ config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=120','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity3/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285479-285832'
-submit(config)
+#submit(config)
 
 
 config.General.requestName = 'pPb2016_Pbp_HM120_4'
@@ -169,7 +169,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=120','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity3/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 
 config.General.requestName = 'pPb2016_pPb_HM150_1'
@@ -188,7 +188,7 @@ config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=150','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity2/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285479-285832'
-submit(config)
+#submit(config)
 
 
 config.General.requestName = 'pPb2016_Pbp_HM150_1'
@@ -227,7 +227,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=150','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity4/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_HM150_5'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM150_5'
@@ -236,7 +236,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=150','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity5/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_HM150_6'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM150_6'
@@ -245,7 +245,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=150','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity6/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 
 config.General.requestName = 'pPb2016_pPb_HM185_1'
@@ -292,7 +292,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=185','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity4/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_HM185_5'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM185_5'
@@ -301,7 +301,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=185','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity5/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_pPb_HM250_1'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_pPb_HM250_1'
@@ -346,7 +346,7 @@ config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=250','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity3/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285479-285832'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_HM250_3'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM250_3'
@@ -364,7 +364,7 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=250','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity4/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_HM250_5'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM250_5'
@@ -373,5 +373,5 @@ config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=250','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt']
 config.Data.inputDataset = '/PAHighMultiplicity5/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
-submit(config)
+#submit(config)
 

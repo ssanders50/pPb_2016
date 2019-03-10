@@ -49,14 +49,6 @@ process.GlobalTag.snapshotTime = cms.string("9999-12-31 23:59:59.000")
 process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
 process.MessageLogger.cerr.FwkReport.reportEvery=5000
 
-process.CondDB.connect = "sqlite_file:HeavyIonRPRcd_pPb2016_MB_offline.db"
-process.PoolDBESSource = cms.ESSource("PoolDBESSource",
-                                       process.CondDB,
-                                       toGet = cms.VPSet(cms.PSet(record = cms.string('HeavyIonRPRcd'),
-                                                                  tag = cms.string('HeavyIonRPRcd_pPb2016_MB_offline')
-                                                                  )
-                                                         )
-                                      )
 process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
 
 
@@ -195,16 +187,61 @@ process.checkflattening.trackTag_ = cms.InputTag("generalTracks")
 process.checkflattening.useNtrk = cms.untracked.bool(True)
 process.checkflattening.offsetFile = cms.untracked.string( ivars.offset )
 if ivars.ntrkMin == 0:
+    process.CondDB.connect = "sqlite_file:HeavyIonRPRcd_pPb2016_MB_offline.db"
+    process.PoolDBESSource = cms.ESSource("PoolDBESSource",
+                                       process.CondDB,
+                                       toGet = cms.VPSet(cms.PSet(record = cms.string('HeavyIonRPRcd'),
+                                                                  tag = cms.string('HeavyIonRPRcd_pPb2016_MB_offline')
+                                                                  )
+                                                         )
+                                      )
+    process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
     process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.minBias*process.hfCoincFilter*process.Noff*process.ppNoffFilterMB*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
 
 if ivars.ntrkMin == 120:
+    process.CondDB.connect = "sqlite_file:HeavyIonRPRcd_pPb2016_HM120_offline.db"
+    process.PoolDBESSource = cms.ESSource("PoolDBESSource",
+                                       process.CondDB,
+                                       toGet = cms.VPSet(cms.PSet(record = cms.string('HeavyIonRPRcd'),
+                                                                  tag = cms.string('HeavyIonRPRcd_pPb2016_HM120_offline')
+                                                                  )
+                                                         )
+                                      )
+    process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
     process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM120*process.hfCoincFilter*process.Noff*process.ppNoffFilter120*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
 
 if ivars.ntrkMin == 150:
+    process.CondDB.connect = "sqlite_file:HeavyIonRPRcd_pPb2016_HM150_offline.db"
+    process.PoolDBESSource = cms.ESSource("PoolDBESSource",
+                                       process.CondDB,
+                                       toGet = cms.VPSet(cms.PSet(record = cms.string('HeavyIonRPRcd'),
+                                                                  tag = cms.string('HeavyIonRPRcd_pPb2016_HM150_offline')
+                                                                  )
+                                                         )
+                                      )
+    process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
     process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM150*process.hfCoincFilter*process.Noff*process.ppNoffFilter150*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
 
 if ivars.ntrkMin == 185:
+    process.CondDB.connect = "sqlite_file:HeavyIonRPRcd_pPb2016_HM185_offline.db"
+    process.PoolDBESSource = cms.ESSource("PoolDBESSource",
+                                       process.CondDB,
+                                       toGet = cms.VPSet(cms.PSet(record = cms.string('HeavyIonRPRcd'),
+                                                                  tag = cms.string('HeavyIonRPRcd_pPb2016_HM185_offline')
+                                                                  )
+                                                         )
+                                      )
+    process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
     process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM185*process.hfCoincFilter*process.Noff*process.ppNoffFilter185*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
 
 if ivars.ntrkMin == 250:
-    process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM250*process.hfCoincFilter*process.Noff*process.ppNoffFilter250*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
+    process.CondDB.connect = "sqlite_file:HeavyIonRPRcd_pPb2016_HM250_offline.db"
+    process.PoolDBESSource = cms.ESSource("PoolDBESSource",
+                                       process.CondDB,
+                                       toGet = cms.VPSet(cms.PSet(record = cms.string('HeavyIonRPRcd'),
+                                                                  tag = cms.string('HeavyIonRPRcd_pPb2016_HM250_offline')
+                                                                  )
+                                                         )
+                                      )
+    process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
+     process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM250*process.hfCoincFilter*process.Noff*process.ppNoffFilter250*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
