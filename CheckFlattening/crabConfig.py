@@ -10,7 +10,7 @@ config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = '/home/sanders/pPb_2016/CheckFlattening/checkflattening_cfg.py'
 config.JobType.maxJobRuntimeMin = 1315
 config.section_('Data')
-config.Data.unitsPerJob = 80
+config.Data.unitsPerJob = 120
 config.Data.publication = False
 config.Data.splitting = 'LumiBased'
 config.section_('User')
@@ -61,13 +61,67 @@ config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collision
 config.JobType.pyCfgParams = ['noprint','ntrkMin=120','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_pPb_HM120.root']
 config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285479-285832'
-submit(config)
+#submit(config)
 
 config.General.requestName = 'pPb2016_Pbp_HM120_1_Check'
 config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM120_1_Check'
 config.Data.lumiMask = 'Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt'
 config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM120_offline.db','offset_pPb2016_Pbp_HM120.root']
 config.JobType.pyCfgParams = ['noprint','ntrkMin=120','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_Pbp_HM120.root']
+config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
+config.Data.runRange = '285952-286009'
+#submit(config)
+
+config.General.requestName = 'pPb2016_pPb_HM150_1_Check'
+config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_pPb_HM150_1_Check'
+config.Data.lumiMask = 'Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt'
+config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM150_offline.db','offset_pPb2016_pPb_HM150.root']
+config.JobType.pyCfgParams = ['noprint','ntrkMin=150','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_pPb_HM150.root']
+config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
+config.Data.runRange = '285479-285832'
+submit(config)
+
+config.General.requestName = 'pPb2016_Pbp_HM150_1_Check'
+config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM150_1_Check'
+config.Data.lumiMask = 'Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt'
+config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM150_offline.db','offset_pPb2016_Pbp_HM150.root']
+config.JobType.pyCfgParams = ['noprint','ntrkMin=150','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_Pbp_HM150.root']
+config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
+config.Data.runRange = '285952-286009'
+submit(config)
+
+config.General.requestName = 'pPb2016_pPb_HM185_1_Check'
+config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_pPb_HM185_1_Check'
+config.Data.lumiMask = 'Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt'
+config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM185_offline.db','offset_pPb2016_pPb_HM185.root']
+config.JobType.pyCfgParams = ['noprint','ntrkMin=185','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_pPb_HM185.root']
+config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
+config.Data.runRange = '285479-285832'
+submit(config)
+
+config.General.requestName = 'pPb2016_Pbp_HM185_1_Check'
+config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM185_1_Check'
+config.Data.lumiMask = 'Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt'
+config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM185_offline.db','offset_pPb2016_Pbp_HM185.root']
+config.JobType.pyCfgParams = ['noprint','ntrkMin=185','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_Pbp_HM185.root']
+config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
+config.Data.runRange = '285952-286009'
+submit(config)
+
+config.General.requestName = 'pPb2016_pPb_HM250_1_Check'
+config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_pPb_HM250_1_Check'
+config.Data.lumiMask = 'Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt'
+config.JobType.inputFiles = ['Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM250_offline.db','offset_pPb2016_pPb_HM250.root']
+config.JobType.pyCfgParams = ['noprint','ntrkMin=250','lumifile=Cert_285479-285832_HI8TeV_PromptReco_pPb_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_pPb_HM250.root']
+config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
+config.Data.runRange = '285479-285832'
+submit(config)
+
+config.General.requestName = 'pPb2016_Pbp_HM250_1_Check'
+config.Data.outLFNDirBase = '/store/user/ssanders/pPb2016_Pbp_HM250_1_Check'
+config.Data.lumiMask = 'Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt'
+config.JobType.inputFiles = ['Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','HeavyIonRPRcd_pPb2016_HM250_offline.db','offset_pPb2016_Pbp_HM250.root']
+config.JobType.pyCfgParams = ['noprint','ntrkMin=250','lumifile=Cert_285952-286009_HI8TeV_PromptReco_Pbp_Collisions16_JSON_NoL1T.txt','offset=offset_pPb2016_Pbp_HM250.root']
 config.Data.inputDataset = '/PAHighMultiplicity0/PARun2016C-PromptReco-v1/AOD'
 config.Data.runRange = '285952-286009'
 submit(config)

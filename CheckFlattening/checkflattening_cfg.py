@@ -244,4 +244,4 @@ if ivars.ntrkMin == 250:
                                                          )
                                       )
     process.es_prefer_flatparms = cms.ESPrefer('PoolDBESSource','')
-     process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM250*process.hfCoincFilter*process.Noff*process.ppNoffFilter250*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
+    process.p = cms.Path(process.collisionEventSelectionPA*process.olvFilter_pPb8TeV_dz1p0*process.hltHM250*process.hfCoincFilter*process.Noff*process.ppNoffFilter250*process.hiEvtPlane*process.hiEvtPlaneFlat*process.checkflattening)
